@@ -34,4 +34,13 @@ else {
     finalPrice = 0.21 * kilometraggio;
 }
 /* final alert that displays the price rounded up to the 2nd decimal */
-alert(`Il prezzo del viaggio applicando gli sconti appropriati è di: ${finalPrice.toFixed(2)}`);
+if (Number(age) < 18) {
+    alert(`Il prezzo del viaggio è di: ${finalPrice.toFixed(2)}, è stato applicato uno sconto del 20%`);
+}
+else if (Number(age) > 65) {
+    alert(`Il prezzo del viaggio è di: ${finalPrice.toFixed(2)}, è stato applicato uno sconto del 40%`);
+}
+else {
+    alert(`Il prezzo del viaggio è di: ${finalPrice.toFixed(2)}, non ti meriti uno sconto\n`);
+}
+
