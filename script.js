@@ -8,16 +8,17 @@ let age;
 let flag = 0;
 /* check if km is valid */
 while (flag === 0) {
-    kilometraggio = prompt("inserire numero di km da perocrrere");
-    if (!isNaN(kilometraggio)) {
+    kilometraggio = prompt("inserire numero di km da perocorrere");
+    if (!isNaN(kilometraggio) && Number(kilometraggio) > 0) {
         flag = 1;
     }
 }
 flag = 0;
 /* check if age is valid */
+/* */
 while (flag === 0) {
     age = prompt("inserire età del viaggiatore");
-    if (!isNaN(age) && age > 0) {
+    if (!isNaN(age) && age > 0 && age < 117) {
         flag = 1;
     }
 }
